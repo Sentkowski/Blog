@@ -1,0 +1,77 @@
+.page-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #272635;
+}
+
+.name-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100px;
+    border-bottom: 3px solid #B1E5F2;
+}
+
+.app-name {
+    margin: 10px;
+    font-size: 48px;
+    color: white;
+}
+
+.vert-line {
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    height: calc(100% - 130px);
+    border-right: 3px solid #B1E5F2;
+}
+
+.description {
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    color: #B1E5F2;
+    background-color: #272635DD;
+    font-size: 32px;
+    border: 3px solid #B1E5F2;
+}
+
+.special-text {
+    color: white;
+}
+
+.topic-list {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.topic-box {
+    z-index: 1;
+    border: 3px solid #B1E5F2;
+    color: #B1E5F2;
+    background-color: #272635DD;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.particles-background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
