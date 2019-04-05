@@ -62,5 +62,19 @@ export default {
         }
       }
     },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": false,
+          "mode": "push"
+        },
+        "resize": true
+      }
+    },
     "retina_detect": true
   }
