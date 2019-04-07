@@ -1,14 +1,14 @@
 export default {
     "particles": {
       "number": {
-        "value": 150,
+        "value": 125,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": ["#ffffff", "#EF4135", "#0055A4"]
       },
       "shape": {
         "type": "circle",
@@ -21,7 +21,7 @@ export default {
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.3,
         "random": false,
         "anim": {
           "enable": false,
@@ -32,7 +32,7 @@ export default {
       },
       "size": {
         "value": 3,
-        "random": true,
+        "random": false,
         "anim": {
           "enable": false,
           "speed": 40,

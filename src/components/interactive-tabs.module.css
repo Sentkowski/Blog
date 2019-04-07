@@ -1,0 +1,85 @@
+.container {
+    margin: 0 15px;
+    border: 2px solid #272635;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-container {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    padding: 5px;
+    flex: 1;
+    min-height: 75px;
+    border: none;
+    border-right: 2px solid #272635;
+    background-color: #E5E5E5;
+    font-size: 24px;
+    font-weight: bold;
+    color: #272635;
+}
+
+.tabs-container button:first-of-type {
+    border-radius: 20px 0 0 0;
+}
+
+.tabs-container button:last-of-type {
+    border-radius: 0 20px 0 0;
+    border: none;
+}
+
+.french-text {
+    color: white;
+    background-color: #272635;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.translation-container {
+    display: flex;
+    align-items: center;
+}
+
+.next-button,
+.previous-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: #E5E5E5;
+}
+
+.next-button img,
+.previous-button img {
+    height: 45px;
+    width: 45px;
+}
+
+.next-button {
+    border-radius: 0 0 20px 0;
+    border-left: 2px solid #272635;
+}
+
+.previous-button {
+    border-radius: 0 0 0 20px;
+    border-right: 2px solid #272635;
+}
+
+.previous-button img {
+    transform: scaleX(-1);
+}
+
+.translation {
+    flex: 1;
+    font-size: 20px;
+    color: #272635;
+    text-align: center;
+}

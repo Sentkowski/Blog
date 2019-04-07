@@ -1,0 +1,97 @@
+.rule-wrapper {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.rule-wrapper.first {
+    padding-top: 40px;
+}
+
+.rule-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #272635;
+    padding: 5px 15px;
+}
+
+.french-in-english {
+    font-style: italic;
+}
+
+.rule-example {
+    width: 75%;
+    background-color: #272635BB;
+    border-radius: 0 20px 20px 0;
+    padding: 5px 50px;
+    font-size: 24px;
+    color: white;
+}
+
+.special-word {
+    color: #b1e5f2;
+    font-weight: bold;
+}
+
+.rule-translation {
+    font-size: 20px;
+    color: #272635;
+    padding: 5px 15px;
+}
+
+.right.rule-wrapper {
+    align-items: flex-end;
+}
+.right .rule-example {
+    border-radius: 20px 0 0 20px;
+    text-align: right;
+}
+
+.middle.rule-wrapper {
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.rule-explanation {
+    font-size: 20px;
+    color: #272635;
+    padding: 5px 30px 15px;
+}
+
+.multiple-examples {
+    width: 75%;
+    background-color: #272635BB;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.multiple-examples p:nth-child(odd) {
+    font-size: 24px;
+    color: white;
+}
+
+.multiple-examples p:nth-child(even) {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.multiple-examples p:last-of-type {
+    padding-bottom: 0;
+}
+
+.whole .rule-example {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+}
+
+.whole .rule-translation {
+    text-align: center;
+}
+
+
+.rule-wrapper.whole {
+    padding-bottom: 50px;
+}
