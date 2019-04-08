@@ -6,6 +6,8 @@ import ContentList from "../components/content-list.js"
 import PostHeading from "../components/post-heading.js"
 import TextSegment from "../components/text-segment.js"
 import InteractiveTabs from "../components/interactive-tabs.js"
+import TestAbc from "../components/test-abc.js"
+import PostFooter from "../components/post-footer.js"
 
 import styles from "../styles/definite-articles.module.css"
 import mSymbol from "../../static/m-symbol.svg"
@@ -16,23 +18,48 @@ const dummyTabs = [
     [
         {
             button: <img src={mSymbol} />,
-            activeButton: 'source',
-            french: <><span style={{color:'red'}}>t</span>ext</>,
-            translation: 'text in english',
+            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
+            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Le </span>garcon est gentil.</>,
+            translation: 'The boy is nice.',
         }, 
         {
             button: <img src={fSymbol} />,
-            activeButton: 'source',
-            french: '>t<ext',
-            translation: 'text in english',
+            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
+            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>La</span> fille est gentile.</>,
+            translation: 'The girl is nice.',
         }, 
         {
             button: <img src={groupSymbol} />,
-            activeButton: 'source',
-            french: '>t<ext',
-            translation: 'text in english',
+            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
+            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Les</span> enfants sont gentils.</>,
+            translation: 'The children are nice.',
         }, 
     ]
+]
+
+let dummyTest = [
+    {
+        frenchGap: 'Je suis _ chat.',
+        frenchFull: 'Je suis le chat',
+        translation: 'I am the cat.',
+        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        answers: [
+            {text: 'les', isRight: false},
+            {text: 'la', isRight: false},
+            {text: 'le', isRight: true}
+        ]
+    },
+        {
+        frenchGap: 'Je suis _ chat.',
+        frenchFull: 'Je suis le chat',
+        translation: 'I am the cat.',
+        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        answers: [
+            {text: 'les', isRight: false},
+            {text: 'las', isRight: false},
+            {text: 'le', isRight: true}
+        ]
+    }
 ]
 
 const dummy = [
@@ -64,6 +91,9 @@ export default () => (
         <ArticlesRules />
         <PostHeading heading='See it in action' />
         <InteractiveTabs examples={dummyTabs} />
+        <PostHeading heading='Give it a try' />
+        <TestAbc exercises={dummyTest} />
+        <PostFooter />
     </PostContainer>
 )
 

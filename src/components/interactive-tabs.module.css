@@ -1,14 +1,17 @@
 .container {
+    position: relative;
+    background-color: #272635;
     margin: 0 15px;
     border: 2px solid #272635;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 120px;
 }
 
 .tabs-container {
     display: flex;
-    align-items: center;
 }
 
 .tab {
@@ -42,7 +45,11 @@
 
 .translation-container {
     display: flex;
-    align-items: center;
+}
+
+.translation-container p {
+    background-color: #E5E5E5;
+    padding: 20px;
 }
 
 .next-button,
@@ -54,11 +61,11 @@
     height: 60px;
     width: 60px;
     border: none;
-    background-color: #E5E5E5;
 }
 
 .next-button img,
 .previous-button img {
+    pointer-events: none;
     height: 45px;
     width: 45px;
 }
@@ -82,4 +89,24 @@
     font-size: 20px;
     color: #272635;
     text-align: center;
+}
+
+.tab.tab-selected {
+    background-color: #272635;
+    color: #b1e5f2;
+}
+
+.hints {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width:100%;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #272635BB;
+    justify-content: space-between;
+}
+
+.tapHint {
+    width: 50%;
 }

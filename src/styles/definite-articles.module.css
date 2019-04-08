@@ -95,3 +95,7 @@
 .rule-wrapper.whole {
     padding-bottom: 50px;
 }
+
+.chosen-icon {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(1005%) hue-rotate(158deg) brightness(98%) contrast(93%);
+}
