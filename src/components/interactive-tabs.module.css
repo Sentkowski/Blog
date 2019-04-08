@@ -24,6 +24,7 @@
     font-size: 24px;
     font-weight: bold;
     color: #272635;
+    cursor: pointer;
 }
 
 .tabs-container button:first-of-type {
@@ -61,6 +62,7 @@
     height: 60px;
     width: 60px;
     border: none;
+    cursor: pointer;
 }
 
 .next-button img,

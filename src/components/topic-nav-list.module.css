@@ -8,19 +8,28 @@
   display: none;
 }
 
-.TopicList_TopicLink {
+.TopicList_TopicLink a, .abouts {
   margin: 10px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
   transform-origin: bottom left;
   transform: scale(1);
-  transition: all 0.5s;
-  cursor: pointer;
+  transition: all 0.25s;
 }
 
-.TopicList_TopicLink:hover {
+.TopicList_TopicLink a:hover, .abouts:hover {
   transform: scale(1.05);
   border-color: white;
   color: white;
   text-decoration: underline;
+}
+
+.abouts:nth-last-of-type(2) {
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 1000px) {

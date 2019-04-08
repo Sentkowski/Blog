@@ -1,20 +1,6 @@
 import React from "react"
 import styles from "../components/test-abc.module.css"
 
-let dummy = [
-    {
-        frenchGap: 'Je suis _ chat.',
-        frenchFull: 'Je suis le chat',
-        translation: 'I am the cat.',
-        icon: 'source',
-        answers: [
-            {text: 'les', isRight: false},
-            {text: 'la', isRight: false},
-            {text: 'le', isRight: true}
-        ]
-    }
-]
-
 export default class abcTest extends React.Component {
     constructor(props) {
         super(props);
@@ -34,13 +20,13 @@ export default class abcTest extends React.Component {
     handleAnswer(correct, e) {
         if (correct) {
             e.target.style.animationName = styles.right;
-            e.target.style.animationDuration = '1.5s';
+            e.target.style.animationDuration = '0.8s';
             e.target.style.animationPlayState = 'running';
             setTimeout(() => {
                 this.setState(prevState => ({
                     current: (prevState.current + 1) % this.props.exercises.length,
                 }));
-            }, 1500);
+            }, 800);
         } else {
             e.target.style.animationPlayState = 'running';
         }

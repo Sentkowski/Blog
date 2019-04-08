@@ -1,8 +1,14 @@
-.postHeading {
+.post-heading {
     background-color: #5A577844;
     padding: 15px 30px;
     text-align: left;
     font-size: 32px;
     font-weight: bold;
     color: #272635;
+}
+
+@media only screen and (min-width: 750px) {
+    .post-heading {
+        border-radius: 20px;
+    }
 }

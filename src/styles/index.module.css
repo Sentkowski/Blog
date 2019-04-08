@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   background-color: #272635;
+  min-height: 100vh;
 }
 
 .name-header {
@@ -27,6 +28,7 @@
   top: 100px;
   left: 80%;
   height: calc(100% - 150px);
+  min-height: 100vh;
   border-right: 3px solid #b1e5f2;
 }
 
@@ -94,7 +96,7 @@
   color: #b1e5f2;
   font-size: 32px;
   border: 3px solid #b1e5f2;
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
 }
@@ -102,7 +104,7 @@
 .footer-link-wrapper {
   text-align: center;
   background-color: #272635dd;
-  padding: 30px;
+  padding: 30px 0;
   width: 50%;
 }
 

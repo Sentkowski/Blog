@@ -13,6 +13,7 @@
 }
 
 .item {
+    color: #272635;
     cursor: pointer;
     display: inline-block;
     text-decoration: underline;

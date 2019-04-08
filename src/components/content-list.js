@@ -10,13 +10,13 @@ export default function(props) {
         <li key={item}>
           <ol>
             {item.map(item => (
-              <li className={styles.nestedItemWrapper} key={item}><p className={styles.item}>{item}</p></li>
+              <li className={styles.nestedItemWrapper} key={item.name}><a href={item.id} className={styles.item}>{item.name}</a></li>
             ))}
           </ol>
         </li>
       )
     } else {
-      return <li key={item}><p className={styles.item}>{item}</p></li>
+      return <li key={item.name}><a href={item.id} className={styles.item}>{item.name}</a></li>
     }
   }
 }

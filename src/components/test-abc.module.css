@@ -46,6 +46,7 @@
 }
 
 .answer {
+    cursor: pointer;
     flex: 1;
     background: none;
     border: none;
@@ -54,7 +55,7 @@
     color: #272635;
     font-size: 24px;
     font-weight: bold;
-    animation: wrong 1s forwards paused;
+    animation: wrong 0.25s forwards paused;
 }
 
 .answers-container button:first-of-type {

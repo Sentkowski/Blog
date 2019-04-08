@@ -1,7 +1,23 @@
 .container {
+    position: relative;
+    z-index: 1;
     padding: 30px;
-    background-color: #27263533;
-    color: #272635;
-    border-top: 2px solid #272635;
+    background-color: #5C5B67;
+    color: #E5E5E5;
     font-size: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+    .container {
+        width: 100%;
+        padding: 30px calc(50% - 375px);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        width: calc(100% - 300px);
+        padding: 30px calc(50% - 500px);
+        margin-left: 300px;
+    }
 }

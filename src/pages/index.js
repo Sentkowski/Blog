@@ -5,14 +5,8 @@ import particlesConfig from "../configs/particles-config.js"
 import "../styles/reset.css"
 import indexStyles from "../styles/index.module.css"
 import TopicNavList from "../components/topic-nav-list.js"
+import topicArr from "../configs/topic-arr.js"
 
-const dummyTopics = [
-  "La, le, les, l'",
-  "On, nous",
-  "Ich, du, dich",
-  "Bla, bla, blas",
-  "Lorem ipsum",
-]
 export default () => (
   <section id="" className={indexStyles.pageContainer}>
     <div className={indexStyles.vertLine} />
@@ -34,9 +28,9 @@ export default () => (
         <br />
         <span className={indexStyles.specialText}>Made for you.</span>
       </p>
-      <TopicNavList topics={dummyTopics} />
+      <TopicNavList abouts={false} numbers={true}/>
     </div>
-    <TopicList topics={dummyTopics} />
+    <TopicList topics={topicArr} />
     <footer className={indexStyles.mobileFooterContainer}>
       <div className={indexStyles.footerLinkWrapper}>
         <p>About</p>
@@ -57,11 +51,11 @@ function TopicList(props) {
     <ul className={indexStyles.topicList}>
       {props.topics.map(topic => (
         <li
-          key={topic}
+          key={topic.name}
           className={indexStyles.topicWrapper}
         >
-        <Link to='/definite-articles' className={indexStyles.topicBox + " " + indexStyles.boxHover}>
-          <h2>{topic}</h2>
+        <Link to={topic.path} className={indexStyles.topicBox + " " + indexStyles.boxHover}>
+          <h2>{topic.name}</h2>
         </Link>
         </li>
       ))}
