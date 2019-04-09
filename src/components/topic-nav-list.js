@@ -6,7 +6,7 @@ import topicArr from "../configs/topic-arr.js"
 export default function TopicList(props) {
   let num = 1
   return (
-    <ol className={styles.TopicList + ' ' + styles.TopicList__desktopOnly}>
+    <ol className={styles.TopicList + ' ' + (props.desktopOnly ? styles.TopicList__desktopOnly : '')}>
       {topicArr.map(topic => (
         <li
           key={topic}

@@ -14,8 +14,7 @@ export default class InteractiveTabs extends React.Component {
 
     arrowClick(val) {
         this.setState(prevState => ({
-            exampleSwitchCount: prevState.exampleSwitchCount + val,
-            currentTab: 0
+            exampleSwitchCount: prevState.exampleSwitchCount + val
         }));
     }
 

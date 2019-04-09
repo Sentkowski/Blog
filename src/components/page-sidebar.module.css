@@ -1,12 +1,32 @@
 .container {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: fixed;
     z-index: 2;
-    width: 300px;
-    background-color: #272635;
+    width: 100%;
+    background-color: #272635EE;
     color: white;
-    height: 100%;
-    padding: 20px;
+    min-height: 100vh;
+    padding: 50px 50px;
+}
+
+.menu-button {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 75px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #272635;
+    z-index: 2;
+    background-image: url("../../static/hamburger.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .app-name {
@@ -36,10 +56,28 @@
     left: 0;
     width: 300px;
     height: 100vh;
-    }
+}
+
+.active {
+    display: flex;
+}
 
 @media only screen and (min-width: 1000px) {
     .container {
         display: block;
+        width: 300px;
+        padding: 20px;
       }
+      
+    .menu-button {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    button.active {
+        display: none;
+    }
 }

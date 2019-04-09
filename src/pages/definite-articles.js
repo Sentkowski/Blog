@@ -146,8 +146,8 @@ const cont = [
     {name: 'Introduction', id: '#Introduction'},
     {name: 'Rules', id: '#Rules'},
     [
-        {name: 'La', id: '#La'},
         {name: 'Le', id: '#Le'},
+        {name: 'La', id: '#La'},
         {name: "L'", id: '#L'},
         {name:'Les', id: '#Les'}
     ],
@@ -216,7 +216,7 @@ function ArticlesRules() {
 
 function RuleWrapper(props) {
     return (
-        <div className={`${styles.ruleWrapper} ${styles[props.placement]}`}>
+        <div id={props.id} className={`${styles.ruleWrapper} ${styles[props.placement]}`}>
             {props.children}
         </div>
     )

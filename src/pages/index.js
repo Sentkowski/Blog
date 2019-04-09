@@ -28,7 +28,7 @@ export default () => (
         <br />
         <span className={indexStyles.specialText}>Made for you.</span>
       </p>
-      <TopicNavList abouts={false} numbers={true}/>
+      <TopicNavList desktopOnly={true} abouts={false} numbers={true}/>
     </div>
     <TopicList topics={topicArr} />
     <footer className={indexStyles.mobileFooterContainer}>
