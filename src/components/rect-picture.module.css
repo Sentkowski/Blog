@@ -5,10 +5,10 @@
     background-color: #5A577844;
     border: 3px solid #272635;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .container, .container img {
-    border-radius: 20px;
     width: 75vw;
     height: 50vw;
 }

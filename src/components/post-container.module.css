@@ -1,8 +1,8 @@
 .post-container {
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
     background-color: #efefef;
-    padding-bottom: 70px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -14,7 +14,7 @@
 @media only screen and (min-width: 1000px) {
     .post-container {
         width: calc(100% - 300px);
-        padding: 0 calc(50% - 500px) 70px;
+        padding: 0 calc(50% - 500px);
         margin-left: 300px;
     }
 }
