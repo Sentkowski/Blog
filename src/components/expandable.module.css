@@ -7,10 +7,13 @@
 }
 
 .text {
+    padding: 10px;
     font-size: 18px;
-    margin: 30px;
+    margin: 20px;
     animation: appear 0.4s forwards;
     text-align: justify;
+    background-color: #5A577844;
+    border-radius: 20px;
 }
 
 @keyframes appear {

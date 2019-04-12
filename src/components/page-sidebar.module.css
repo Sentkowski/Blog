@@ -23,7 +23,7 @@
     border: none;
     border-radius: 50%;
     background-color: #272635;
-    z-index: 2;
+    z-index: 1;
     background-image: url("../../static/hamburger.svg");
     background-size: 60%;
     background-repeat: no-repeat;
