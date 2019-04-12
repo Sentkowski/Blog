@@ -15,8 +15,16 @@ export default () => (
       <h1 className={indexStyles.appName}>Grammechs</h1>
       <nav className={indexStyles.desktopNav}>
         <ul className={indexStyles.desktopNavList}>
-          <li className={indexStyles.desktopNavLink + ' ' + indexStyles.boxHover}>About</li>
-          <li className={indexStyles.desktopNavLink + ' ' + indexStyles.boxHover}>Authors</li>
+        <li className={indexStyles.desktopNavLink + ' ' + indexStyles.boxHover}>
+          <Link className={indexStyles.boxHover}  to='/about'>
+            About
+          </Link>
+          </li>
+          <li className={indexStyles.desktopNavLink + ' ' + indexStyles.boxHover}>
+          <Link className={indexStyles.boxHover} to='/authors'>
+            Authors
+          </Link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -32,12 +40,12 @@ export default () => (
     </div>
     <TopicList topics={topicArr} />
     <footer className={indexStyles.mobileFooterContainer}>
-      <div className={indexStyles.footerLinkWrapper}>
-        <p>About</p>
-      </div>
-      <div className={indexStyles.footerLinkWrapper}>
-        <p>Authors</p>
-      </div>
+      <Link to='/about'>
+            About
+      </Link>
+      <Link to='/authors'>
+            Authors
+      </Link>
     </footer>
     <Particles
       params={particlesConfig}

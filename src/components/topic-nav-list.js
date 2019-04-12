@@ -12,7 +12,7 @@ export default function TopicList(props) {
           key={topic}
           className={styles.TopicList_TopicLink}
         >
-          <Link to={topic.path}>
+          <Link activeStyle={{color: '#b1e5f2'}} to={topic.path}>
             {(props.numbers) ? `${num++}. ` : ''}{topic.name}
           </Link>
         </li>
@@ -23,17 +23,17 @@ export default function TopicList(props) {
           key={'About'}
           className={styles.abouts}
         >
-          <h2>
+          <Link activeStyle={{color: '#b1e5f2'}} to='/about'>
             About
-          </h2>
+          </Link>
         </li>
         <li
           key={'Authors'}
           className={styles.abouts}
         >
-          <h2>
+          <Link activeStyle={{color: '#b1e5f2'}} to='/authors'>
             Authors
-          </h2>
+          </Link>
         </li>
       </>
       }

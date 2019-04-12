@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5A577844;
+    border: 3px solid #272635;
+    overflow: hidden;
+}
+
+.container, .container img {
+    border-radius: 20px;
+    width: 75vw;
+    height: 50vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    .container, .container img  {
+        width: 450px;
+        height: 300px;
+    }
+}

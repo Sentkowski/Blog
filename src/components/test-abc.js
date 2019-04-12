@@ -18,7 +18,7 @@ export default class abcTest extends React.Component {
     }
 
     handleAnswer(correct, e) {
-        if (correct) {
+        if (correct && e.target.style.animationPlayState !== 'running') {
             e.target.style.animationName = styles.right;
             e.target.style.animationDuration = '0.8s';
             e.target.style.animationPlayState = 'running';
@@ -26,7 +26,7 @@ export default class abcTest extends React.Component {
                 this.setState(prevState => ({
                     current: (prevState.current + 1) % this.props.exercises.length,
                 }));
-            }, 800);
+            }, 600);
         } else {
             e.target.style.animationPlayState = 'running';
         }

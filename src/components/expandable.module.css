@@ -1,0 +1,47 @@
+.summary {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.summary::after, summary:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 50%;
+    width: calc(50% - 175px);
+    border-bottom: 2px solid #272635;
+}
+.summary::after {
+    left: 0;
+}
+.summary::before {
+    right: 0;
+}
+
+
+
+.summary::-webkit-details-marker {
+    display: none;
+}
+
+.text {
+    animation: appear 0.4s forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

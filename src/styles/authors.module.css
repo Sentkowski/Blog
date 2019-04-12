@@ -1,0 +1,5 @@
+.picture-container {
+    margin: 10px auto 30px;
+    display: flex;
+    justify-content: center;
+}

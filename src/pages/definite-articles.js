@@ -1,7 +1,4 @@
 import React from "react"
-import PageLayout from "../components/page-layout.js"
-import PageSidebar from "../components/page-sidebar.js"
-import PostContainer from "../components/post-container.js"
 import PostTitile from "../components/post-title.js"
 import PostSubtitle from "../components/post-subtitle.js"
 import ContentList from "../components/content-list.js"
@@ -9,7 +6,6 @@ import PostHeading from "../components/post-heading.js"
 import TextSegment from "../components/text-segment.js"
 import InteractiveTabs from "../components/interactive-tabs.js"
 import TestAbc from "../components/test-abc.js"
-import PostFooter from "../components/post-footer.js"
 
 import styles from "../styles/definite-articles.module.css"
 import mSymbol from "../../static/m-symbol.svg"
@@ -162,23 +158,17 @@ const par = [
 
 export default () => (
     <>
-        <PageLayout>
-            <PageSidebar />
-            <PostContainer>
-                <PostTitile title='French definite articles' />
-                <PostSubtitle subtitle="La, le, les, l'" />
-                <ContentList content={cont} />
-                <PostHeading identifier='Introduction' heading='La, le, les, l’ = the' />
-                <TextSegment textSegments={par} />
-                <PostHeading identifier='Rules' heading='When which one?' />
-                <ArticlesRules />
-                <PostHeading identifier='Examples' heading='See it in action' />
-                <InteractiveTabs examples={tabs} />
-                <PostHeading identifier='Exercises' heading='Give it a try' />
-                <TestAbc exercises={test} />
-            </PostContainer>
-        </PageLayout>
-        <PostFooter />
+        <PostTitile title='French definite articles' />
+        <PostSubtitle subtitle="La, le, les, l'" />
+        <ContentList content={cont} />
+        <PostHeading identifier='Introduction' heading='La, le, les, l’ = the' />
+        <TextSegment textSegments={par} />
+        <PostHeading identifier='Rules' heading='When which one?' />
+        <ArticlesRules />
+        <PostHeading identifier='Examples' heading='See it in action' />
+        <InteractiveTabs examples={tabs} />
+        <PostHeading identifier='Exercises' heading='Give it a try' />
+        <TestAbc exercises={test} />
     </>
 )
 

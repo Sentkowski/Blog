@@ -8,7 +8,7 @@
   display: none;
 }
 
-.TopicList_TopicLink a, .abouts {
+.TopicList_TopicLink a, .abouts a {
   margin: 10px;
   display: block;
   position: relative;
@@ -21,7 +21,7 @@
   transition: all 0.25s;
 }
 
-.TopicList_TopicLink a:hover, .abouts:hover {
+.TopicList_TopicLink a:hover, .abouts:hover a {
   transform: scale(1.05);
   border-color: white;
   color: white;

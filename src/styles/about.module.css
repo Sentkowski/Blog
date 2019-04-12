@@ -1,0 +1,7 @@
+.rule-list {
+    margin: 50px 0;
+}
+
+.rule-list > li {
+    margin: 30px 0 50px;
+}

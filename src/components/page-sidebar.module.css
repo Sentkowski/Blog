@@ -1,5 +1,6 @@
 .container {
     display: none;
+    animation: appear 0.25s forwards;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -15,10 +16,10 @@
 .menu-button {
     display: none;
     position: fixed;
-    bottom: 100px;
-    right: 75px;
-    height: 70px;
-    width: 70px;
+    bottom: 50px;
+    right: 25px;
+    height: 50px;
+    width: 50px;
     border: none;
     border-radius: 50%;
     background-color: #272635;
@@ -60,6 +61,15 @@
 
 .active {
     display: flex;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
