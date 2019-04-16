@@ -5,7 +5,6 @@ import PostContainer from "../components/post-container.js"
 import PostFooter from "../components/post-footer.js"
 
 export default (props) => {
-    console.log(props.children)
     if (props.location.pathname !== '/Blog/' && props.location.pathname !== '/') {
         return (
             <>

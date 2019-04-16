@@ -3,11 +3,13 @@
     padding: 0 30px;
     text-align: right;
     font-size: 32px;
+    font-weight: lighter;
     color: #b1e5f2;
 }
 
 @media only screen and (min-width: 750px) {
     .post-subtitle {
         border-radius: 20px;
+        font-size: 40px;
     }
 }

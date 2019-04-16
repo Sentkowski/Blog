@@ -1,11 +1,10 @@
 .container {
     background-color: #E5E5E5;
-    margin: 40px 15px 80px;
+    margin: 40px 15px 40px;
     border: 2px solid #272635;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
 }
 
 .translation-container {
@@ -53,7 +52,6 @@
     padding: 15px 10px;
     color: #272635;
     font-size: 24px;
-    font-weight: bold;
     animation: wrong 0.25s forwards paused;
 }
 
@@ -94,6 +92,6 @@
 
 @media only screen and (min-width: 1000px) {
     .container {
-        margin: 40px 50px 80px;
+        margin: 40px 50px 40px;
     }
 }

@@ -28,6 +28,7 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 2px 4px 2px #00000044;
 }
 
 .app-name {

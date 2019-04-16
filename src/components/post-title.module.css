@@ -1,6 +1,12 @@
 .post-title {
     padding: 20px 30px 10px;
-    font-size: 38px;
+    font-size: 48px;
     color: #272635;
-    font-weight: bold;
+    font-weight: lighter;
+}
+
+@media only screen and (min-width: 750px) {
+    .post-title {
+        font-size: 60px;
+    }
 }

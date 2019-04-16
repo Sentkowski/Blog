@@ -4,11 +4,11 @@
     margin: 0 auto;
     line-height: 1.75;
     color: #272635;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .nested-item-wrapper {
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 50px;
 }
 
@@ -17,4 +17,14 @@
     cursor: pointer;
     display: inline-block;
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-list {
+        font-size: 28px;
+    }
+
+    .nested-item-wrapper {
+        font-size: 24px;
+    }
 }

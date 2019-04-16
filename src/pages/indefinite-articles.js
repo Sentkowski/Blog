@@ -8,10 +8,28 @@ import InteractiveTabs from "../components/interactive-tabs.js"
 import TestAbc from "../components/test-abc.js"
 import Further from "../components/post-further-links.js"
 
-import styles from "../styles/definite-articles.module.css"
+import styles from "../styles/indefinite-articles.module.css"
 import mSymbol from "../../static/m-symbol.svg"
 import fSymbol from "../../static/f-symbol.svg"
 import groupSymbol from "../../static/group-symbol.svg"
+
+const par = [
+    '“Un, une, des“ are definite pronouns in French. They are used to designate something unspecific. They are similar in meaning to “a“ and “an“ in English.',
+    `To know which one to use, you not only have to know the number of a given noun (like in English), but also its gender. What is good is that they do not depend on how the words start or end.`
+]
+
+const cont = [
+    {name: 'Introduction', id: '#Introduction'},
+    {name: 'Rules', id: '#Rules'},
+    [
+        {name: 'Un', id: '#Un'},
+        {name: 'Une', id: '#Une'},
+        {name: "Des", id: '#Des'},
+    ],
+    {name: 'Examples', id: '#Examples'},
+    {name: 'Exercises', id: '#Exercises'}
+]
+
 
 const tabs = [
     [
@@ -139,34 +157,16 @@ const test = [
     }
 ]
 
-const cont = [
-    {name: 'Introduction', id: '#Introduction'},
-    {name: 'Rules', id: '#Rules'},
-    [
-        {name: 'Le', id: '#Le'},
-        {name: 'La', id: '#La'},
-        {name: "L'", id: '#L'},
-        {name:'Les', id: '#Les'}
-    ],
-    {name: 'Examples', id: '#Examples'},
-    {name: 'Exercises', id: '#Exercises'}
-]
-
-const par = [
-    '“Le, la, les, l’“ are definite pronouns in French. They are used to designate something specific, that is to say clearly defined or identified.',
-    `They usually work just like “the“ in English. To know which one to use, you have to know the noun's gender, number and if it starts with a consonant or a vowel.`
-]
-
 const further = [
-    {name: "Un, une, des", path: '/indefinite-articles', description: "Definite articles have indefinite counterparts. Curious to see them?"}
+    {name: "La, le, les, l'", path: '/definite-articles', description: "Indefinite articles have definite counterparts. Why not check them out now?"}
 ]
 
 export default () => (
     <>
-        <PostTitile title='Definite articles' />
-        <PostSubtitle subtitle="La, le, les, l'" />
+        <PostTitile title='Indefinite articles' />
+        <PostSubtitle subtitle="Un, une, des" />
         <ContentList content={cont} />
-        <PostHeading identifier='Introduction' heading='La, le, les, l’ = the' />
+        <PostHeading identifier='Introduction' heading='Un, une, des = a, an' />
         <TextSegment textSegments={par} />
         <PostHeading identifier='Rules' heading='When which one?' />
         <ArticlesRules />
@@ -181,34 +181,25 @@ export default () => (
 function ArticlesRules() {
     return (
         <React.Fragment>
-            <RuleWrapper id='La' placement='first'>
-                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Le</span> is for masculine.</p>
+            <RuleWrapper id='Un' placement='first'>
+                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Un</span> is for masculine.</p>
                 <p className={styles.ruleExample}><span className={styles.specialWord}>Le </span>train est en retard.</p>
                 <p className={styles.ruleTranslation}>The train is late.</p>
             </RuleWrapper>
-            <RuleWrapper id='Le' placement='right'>
-                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>La</span> is for feminime.</p>
+            <RuleWrapper id='Une' placement='right'>
+                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Une</span> is for feminime.</p>
                 <p className={styles.ruleExample}><span className={styles.specialWord}>La</span> rue est vide.</p>
                 <p className={styles.ruleTranslation}>The street is empty.</p>
             </RuleWrapper>
-            <RuleWrapper id='L' placement='middle'>
-                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>L'</span> is for both.</p>
-                <p className={styles.ruleExplanation}>It is used when a singular, either masculine or feminime noun starts with a vowel or a silent h.</p>
-                <div className={styles.multipleExamples}>
-                    <p><span className={styles.specialWord}>L’</span>homme est grand.</p>
-                    <p>The man is big.</p>
-                    <p><span className={styles.specialWord}>L’</span>école est grande.</p>
-                    <p>The school is big.</p>
-                </div> 
-            </RuleWrapper>
-            <RuleWrapper id='Les' placement='whole'>
-                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Les</span> is for plural, no matter the gender.</p>
+            <RuleWrapper id='Des' placement='whole'>
+                <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Des</span> is for plural, no matter the gender.</p>
                 <p className={styles.ruleExample}><span className={styles.specialWord}>Les</span> animaux dansent.</p>
                 <p className={styles.ruleTranslation}>The animals are dancing.</p>
             </RuleWrapper>
         </React.Fragment>
     )
 }
+
 
 function RuleWrapper(props) {
     return (

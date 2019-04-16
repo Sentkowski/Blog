@@ -9,7 +9,7 @@ export default function TopicList(props) {
     <ol className={styles.TopicList + ' ' + (props.desktopOnly ? styles.TopicList__desktopOnly : '')}>
       {topicArr.map(topic => (
         <li
-          key={topic}
+          key={topic.name}
           className={styles.TopicList_TopicLink}
         >
           <Link activeStyle={{color: '#b1e5f2'}} to={topic.path}>
