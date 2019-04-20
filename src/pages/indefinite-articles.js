@@ -36,125 +36,125 @@ const tabs = [
         {
             button: <img src={mSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Le </span>garcon est gentil.</>,
-            translation: 'The boy is nice.',
+            french: <><span style={{color:'#b1e5f2'}}>Un </span>garçon dort.</>,
+            translation: 'A boy is sleeping.',
         }, 
         {
             button: <img src={fSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>La</span> fille est gentile.</>,
-            translation: 'The girl is nice.',
+            french: <><span style={{color:'#b1e5f2'}}>Une </span>fille dort.</>,
+            translation: 'A girl is sleeping.',
         }, 
         {
             button: <img src={groupSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Les</span> enfants sont gentils.</>,
-            translation: 'The children are nice.',
+            french: <><span style={{color:'#b1e5f2'}}>Des </span>gens dorment.</>,
+            translation: 'People are sleeping.',
         },
     ],
     [
         {
             button: <img src={mSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>L’</span>arbre est grand.</>,
-            translation: 'The tree is big.',
+            french: <>Je vois <span style={{color:'#b1e5f2'}}>un </span>chien.</>,
+            translation: 'I see a dog.',
         }, 
         {
             button: <img src={fSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>La</span> lune est grande.</>,
-            translation: 'The moon is big.',
+            french: <>Je vois <span style={{color:'#b1e5f2'}}>une </span>vache.</>,
+            translation: 'I see a cow.',
         }, 
         {
             button: <img src={groupSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Les</span> maisons sont grandes.</>,
-            translation: 'The houses are big.',
+            french: <>Je vois <span style={{color:'#b1e5f2'}}>des </span>animaux.</>,
+            translation: 'I see animals.',
         },
     ],
     [
         {
             button: <img src={mSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Le</span> chien mange.</>,
-            translation: 'The dog is eating.',
+            french: <>J’entends <span style={{color:'#b1e5f2'}}>un </span>homme chanter.</>,
+            translation: 'I hear a man sing.',
         }, 
         {
             button: <img src={fSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>La</span> reine mange.</>,
-            translation: 'The queen is eating.',
+            french: <>J’entends <span style={{color:'#b1e5f2'}}>une </span>femme chanter.</>,
+            translation: 'I hear a woman sing.',
         }, 
         {
             button: <img src={groupSymbol} />,
             activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2', fontWeight:'bold'}}>Les</span> paysans mangent</>,
-            translation: 'The peasants are eating.',
+            french: <>J’entends <span style={{color:'#b1e5f2'}}>des </span>gens chanter.</>,
+            translation: 'I hear people sing.',
         },
     ],
 ]
 
 const test = [
     {
-        frenchGap: 'Où est _ voiture ?',
-        translation: 'Where is the car?',
+        frenchGap: '_ fille mange.',
+        translation: 'A girl is eating.',
         icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
         answers: [
-            {text: 'les', isRight: false},
-            {text: 'la', isRight: true},
-            {text: 'le', isRight: false}
+            {text: 'Un', isRight: false},
+            {text: 'Une', isRight: true},
+            {text: 'Des', isRight: false}
         ]
     },
     {
-        frenchGap: '_ animal mange.',
-        translation: 'The animal is eating.',
+        frenchGap: '_ chien aboie.',
+        translation: 'A dog is barking.',
         icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
         answers: [
-            {text: "L'", isRight: true},
-            {text: 'Le', isRight: false},
-            {text: 'Les', isRight: false}
+            {text: 'Un', isRight: true},
+            {text: 'Une', isRight: false},
+            {text: 'Des', isRight: false}
         ]
     },
     {
-        frenchGap: '_ femme dort.',
-        translation: 'The woman is sleeping.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: "L'", isRight: false},
-            {text: 'Le', isRight: false},
-            {text: 'La', isRight: true}
-        ]
-    },
-    {
-        frenchGap: '_ chat est beau.',
-        translation: 'The cat is beautiful.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
-        answers: [
-            {text: "La", isRight: false},
-            {text: 'Le', isRight: true},
-            {text: "L'", isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ chats boivent.',
-        translation: 'The cats are drinking.',
+        frenchGap: 'J’ai _ animaux',
+        translation: 'I have animals.',
         icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
         answers: [
-            {text: "Les", isRight: true},
-            {text: 'La', isRight: false},
-            {text: "Le", isRight: false}
+            {text: "un", isRight: false},
+            {text: 'une', isRight: false},
+            {text: "des", isRight: true}
         ]
     },
     {
-        frenchGap: '_ voiture est là !',
-        translation: 'The car is here!',
+        frenchGap: '_ gens marchent',
+        translation: 'People are walking.',
+        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
+        answers: [
+            {text: 'Un', isRight: false},
+            {text: 'Une', isRight: false},
+            {text: 'Des', isRight: true}
+        ]
+    },
+    {
+        frenchGap: 'Je vois _ maison',
+        translation: 'I see a house.',
         icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
         answers: [
-            {text: 'Les', isRight: false},
-            {text: 'La', isRight: true},
-            {text: 'Le', isRight: false}
+            {text: "un", isRight: false},
+            {text: 'une', isRight: true},
+            {text: "des", isRight: false}
         ]
-    }
+    },
+    {
+        frenchGap: 'Tu as _ chat',
+        translation: 'You have a cat.',
+        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        answers: [
+            {text: "un", isRight: true},
+            {text: 'une', isRight: false},
+            {text: "des", isRight: false}
+        ]
+    },
 ]
 
 const further = [
@@ -183,18 +183,18 @@ function ArticlesRules() {
         <React.Fragment>
             <RuleWrapper id='Un' placement='first'>
                 <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Un</span> is for masculine.</p>
-                <p className={styles.ruleExample}><span className={styles.specialWord}>Le </span>train est en retard.</p>
-                <p className={styles.ruleTranslation}>The train is late.</p>
+                <p className={styles.ruleExample}><span className={styles.specialWord}>Un </span>oiseau chante.</p>
+                <p className={styles.ruleTranslation}>A bird is singing.</p>
             </RuleWrapper>
             <RuleWrapper id='Une' placement='right'>
                 <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Une</span> is for feminime.</p>
-                <p className={styles.ruleExample}><span className={styles.specialWord}>La</span> rue est vide.</p>
-                <p className={styles.ruleTranslation}>The street is empty.</p>
+                <p className={styles.ruleExample}><span className={styles.specialWord}>Une </span>fille danse.</p>
+                <p className={styles.ruleTranslation}>A girl is dancing.</p>
             </RuleWrapper>
             <RuleWrapper id='Des' placement='whole'>
                 <p className={styles.ruleHeading}><span className={styles.frenchInEnglish}>Des</span> is for plural, no matter the gender.</p>
-                <p className={styles.ruleExample}><span className={styles.specialWord}>Les</span> animaux dansent.</p>
-                <p className={styles.ruleTranslation}>The animals are dancing.</p>
+                <p className={styles.ruleExample}><span className={styles.specialWord}>Des </span>animaux mangent.</p>
+                <p className={styles.ruleTranslation}>Some animals are eating.</p>
             </RuleWrapper>
         </React.Fragment>
     )
