@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/text-segment.module.css"
+import styles from "./text-segment.module.css"
 
 export default (props) => (
   <div className={styles.textContainer}>

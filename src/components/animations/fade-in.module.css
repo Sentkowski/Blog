@@ -1,0 +1,7 @@
+.comp-appear {
+    opacity: 0;
+  }
+.comp-appear-active {
+    opacity: 1;
+    transition: opacity 400ms;
+}

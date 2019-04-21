@@ -28,6 +28,8 @@
 }
 
 .french-container {
+    position: relative;
+    overflow: hidden;
     border-right: 2px solid #272635;
     width: 100%;
     display: flex;

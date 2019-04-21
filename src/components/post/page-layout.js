@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/page-layout.module.css"
+import styles from "./page-layout.module.css"
 
 export default (props) => (
     <div id='page' className={styles.container}>

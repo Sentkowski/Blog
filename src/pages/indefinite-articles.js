@@ -1,17 +1,17 @@
 import React from "react"
-import PostTitile from "../components/post-title.js"
-import PostSubtitle from "../components/post-subtitle.js"
-import ContentList from "../components/content-list.js"
-import PostHeading from "../components/post-heading.js"
-import TextSegment from "../components/text-segment.js"
-import InteractiveTabs from "../components/interactive-tabs.js"
-import TestAbc from "../components/test-abc.js"
-import Further from "../components/post-further-links.js"
+import PostTitile from "../components/post/post-title.js"
+import PostSubtitle from "../components/post/post-subtitle.js"
+import ContentList from "../components/post/content-list.js"
+import PostHeading from "../components/post/post-heading.js"
+import TextSegment from "../components/post/text-segment.js"
+import InteractiveTabs from "../components/demonstration/interactive-tabs.js"
+import TestAbc from "../components/tests/test-abc.js"
+import Further from "../components/post/post-further-links.js"
+
+import tabs from "../data/ind-art-tabs-ex.js"
+import test from "../data/ind-art-test-abc.js"
 
 import styles from "../styles/indefinite-articles.module.css"
-import mSymbol from "../../static/m-symbol.svg"
-import fSymbol from "../../static/f-symbol.svg"
-import groupSymbol from "../../static/group-symbol.svg"
 
 const par = [
     '“Un, une, des“ are definite pronouns in French. They are used to designate something unspecific. They are similar in meaning to “a“ and “an“ in English.',
@@ -28,133 +28,6 @@ const cont = [
     ],
     {name: 'Examples', id: '#Examples'},
     {name: 'Exercises', id: '#Exercises'}
-]
-
-
-const tabs = [
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Un </span>garçon dort.</>,
-            translation: 'A boy is sleeping.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Une </span>fille dort.</>,
-            translation: 'A girl is sleeping.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Des </span>gens dorment.</>,
-            translation: 'People are sleeping.',
-        },
-    ],
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <>Je vois <span style={{color:'#b1e5f2'}}>un </span>chien.</>,
-            translation: 'I see a dog.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <>Je vois <span style={{color:'#b1e5f2'}}>une </span>vache.</>,
-            translation: 'I see a cow.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <>Je vois <span style={{color:'#b1e5f2'}}>des </span>animaux.</>,
-            translation: 'I see animals.',
-        },
-    ],
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <>J’entends <span style={{color:'#b1e5f2'}}>un </span>homme chanter.</>,
-            translation: 'I hear a man sing.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <>J’entends <span style={{color:'#b1e5f2'}}>une </span>femme chanter.</>,
-            translation: 'I hear a woman sing.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <>J’entends <span style={{color:'#b1e5f2'}}>des </span>gens chanter.</>,
-            translation: 'I hear people sing.',
-        },
-    ],
-]
-
-const test = [
-    {
-        frenchGap: '_ fille mange.',
-        translation: 'A girl is eating.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: 'Un', isRight: false},
-            {text: 'Une', isRight: true},
-            {text: 'Des', isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ chien aboie.',
-        translation: 'A dog is barking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
-        answers: [
-            {text: 'Un', isRight: true},
-            {text: 'Une', isRight: false},
-            {text: 'Des', isRight: false}
-        ]
-    },
-    {
-        frenchGap: 'J’ai _ animaux',
-        translation: 'I have animals.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
-        answers: [
-            {text: "un", isRight: false},
-            {text: 'une', isRight: false},
-            {text: "des", isRight: true}
-        ]
-    },
-    {
-        frenchGap: '_ gens marchent',
-        translation: 'People are walking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
-        answers: [
-            {text: 'Un', isRight: false},
-            {text: 'Une', isRight: false},
-            {text: 'Des', isRight: true}
-        ]
-    },
-    {
-        frenchGap: 'Je vois _ maison',
-        translation: 'I see a house.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: "un", isRight: false},
-            {text: 'une', isRight: true},
-            {text: "des", isRight: false}
-        ]
-    },
-    {
-        frenchGap: 'Tu as _ chat',
-        translation: 'You have a cat.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
-        answers: [
-            {text: "un", isRight: true},
-            {text: 'une', isRight: false},
-            {text: "des", isRight: false}
-        ]
-    },
 ]
 
 const further = [

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/expandable.module.css"
+import styles from "./expandable.module.css"
 
 export default (props) => (
     <details className={styles.container}>

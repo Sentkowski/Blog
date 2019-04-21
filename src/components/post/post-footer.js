@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/post-footer.module.css"
+import styles from "./post-footer.module.css"
 import { Link } from "gatsby"
 
 export default () => (

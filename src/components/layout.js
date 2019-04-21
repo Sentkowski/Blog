@@ -1,8 +1,8 @@
 import React from "react"
-import PageLayout from "../components/page-layout.js"
-import PageSidebar from "../components/page-sidebar.js"
-import PostContainer from "../components/post-container.js"
-import PostFooter from "../components/post-footer.js"
+import PageLayout from "../components/post/page-layout.js"
+import PageSidebar from "../components/post/page-sidebar.js"
+import PostContainer from "../components/post/post-container.js"
+import PostFooter from "../components/post/post-footer.js"
 
 export default (props) => {
     if (props.location.pathname !== '/Blog/' && props.location.pathname !== '/') {

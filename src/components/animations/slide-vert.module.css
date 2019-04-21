@@ -1,0 +1,16 @@
+.comp-enter, .comp-appear {
+  transform: translateY(-100px);
+}
+.comp-enter-active, .comp-appear-active {
+transform: translateY(0);
+  transition: transform 300ms;
+}
+.comp-exit {
+  position: absolute;
+  margin: auto;
+  top: 15px;
+  transition: transform 300ms;
+}
+.comp-exit-active {
+  transform: translateY(100px);
+}

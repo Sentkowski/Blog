@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "../components/post-further-links.module.css"
+import styles from "./post-further-links.module.css"
 
 export default (props) => (
     <nav className={styles.container}>

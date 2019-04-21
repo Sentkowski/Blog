@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "../styles/about.module.css"
-import PostTitile from "../components/post-title.js"
-import PostSubtitle from "../components/post-subtitle.js"
-import PostHeading from "../components/post-heading.js"
-import TextSegment from "../components/text-segment.js"
-import Expandable from "../components/expandable.js"
+import PostTitile from "../components/post/post-title.js"
+import PostSubtitle from "../components/post/post-subtitle.js"
+import PostHeading from "../components/post/post-heading.js"
+import TextSegment from "../components/post/text-segment.js"
+import Expandable from "../components/post/expandable.js"
 
 export default () => (
     <>

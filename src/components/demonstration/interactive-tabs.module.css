@@ -24,6 +24,7 @@
     font-size: 24px;
     color: #272635;
     cursor: pointer;
+    transition: background-color 150ms;
 }
 
 .tabs-container button:first-of-type {

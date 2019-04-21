@@ -3,7 +3,6 @@
     width: 100%;
     min-height: 100vh;
     background-color: #efefef;
-    animation: appear 0.3s forwards;
 }
 
 @media only screen and (min-width: 750px) {
@@ -17,14 +16,5 @@
         width: calc(100% - 300px);
         padding: 0 calc(50% - 500px);
         margin-left: 300px;
-    }
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }

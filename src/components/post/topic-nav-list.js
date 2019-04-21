@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "../components/topic-nav-list.module.css"
-import topicArr from "../configs/topic-arr.js"
+import styles from "./topic-nav-list.module.css"
+import topicArr from "../../configs/topic-arr.js"
 
 export default function TopicList(props) {
   let num = 1

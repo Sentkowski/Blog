@@ -2,9 +2,9 @@ import React from "react"
 import ReactDOM from 'react-dom'
 import { Link } from "gatsby"
 import Particles from "react-particles-js"
-import particlesConfig from "../configs/particles-config.js"
-import styles from "../components/page-sidebar.module.css"
-import TopicNavList from "../components/topic-nav-list.js"
+import particlesConfig from "../../data/particles-config.js"
+import styles from "./page-sidebar.module.css"
+import TopicNavList from "./topic-nav-list.js"
 
 export default class Sidebar extends React.Component {
     constructor (props) {

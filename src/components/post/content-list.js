@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/content-list.module.css"
+import styles from "./content-list.module.css"
 
 export default function(props) {
   return <ol className={styles.mainList}>{props.content.map(item => createList(item))}</ol>

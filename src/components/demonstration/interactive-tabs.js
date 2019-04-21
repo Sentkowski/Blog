@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "../components/interactive-tabs.module.css"
+import styles from "./interactive-tabs.module.css"
 
-import arrow from "../../static/arrow.svg"
+import arrow from "../../../static/arrow.svg"
 
 export default class InteractiveTabs extends React.Component {
     constructor(props) {

@@ -1,143 +1,17 @@
 import React from "react"
-import PostTitile from "../components/post-title.js"
-import PostSubtitle from "../components/post-subtitle.js"
-import ContentList from "../components/content-list.js"
-import PostHeading from "../components/post-heading.js"
-import TextSegment from "../components/text-segment.js"
-import InteractiveTabs from "../components/interactive-tabs.js"
-import TestAbc from "../components/test-abc.js"
-import Further from "../components/post-further-links.js"
+import PostTitile from "../components/post/post-title.js"
+import PostSubtitle from "../components/post/post-subtitle.js"
+import ContentList from "../components/post/content-list.js"
+import PostHeading from "../components/post/post-heading.js"
+import TextSegment from "../components/post/text-segment.js"
+import InteractiveTabs from "../components/demonstration/interactive-tabs.js"
+import TestAbc from "../components/tests/test-abc.js"
+import Further from "../components/post/post-further-links.js"
+
+import tabs from "../data/def-art-tabs-ex.js"
+import test from "../data/def-art-test-abc.js"
 
 import styles from "../styles/definite-articles.module.css"
-import mSymbol from "../../static/m-symbol.svg"
-import fSymbol from "../../static/f-symbol.svg"
-import groupSymbol from "../../static/group-symbol.svg"
-
-const tabs = [
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Le </span>garcon est gentil.</>,
-            translation: 'The boy is nice.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>La</span> fille est gentile.</>,
-            translation: 'The girl is nice.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Les</span> enfants sont gentils.</>,
-            translation: 'The children are nice.',
-        },
-    ],
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>L’</span>arbre est grand.</>,
-            translation: 'The tree is big.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>La</span> lune est grande.</>,
-            translation: 'The moon is big.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Les</span> maisons sont grandes.</>,
-            translation: 'The houses are big.',
-        },
-    ],
-    [
-        {
-            button: <img src={mSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={mSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Le</span> chien mange.</>,
-            translation: 'The dog is eating.',
-        }, 
-        {
-            button: <img src={fSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={fSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>La</span> reine mange.</>,
-            translation: 'The queen is eating.',
-        }, 
-        {
-            button: <img src={groupSymbol} />,
-            activeButton: <img className={styles.chosenIcon} src={groupSymbol} />,
-            french: <><span style={{color:'#b1e5f2'}}>Les</span> paysans mangent</>,
-            translation: 'The peasants are eating.',
-        },
-    ],
-]
-
-const test = [
-    {
-        frenchGap: 'Où est _ voiture ?',
-        translation: 'Where is the car?',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: 'les', isRight: false},
-            {text: 'la', isRight: true},
-            {text: 'le', isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ animal mange.',
-        translation: 'The animal is eating.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
-        answers: [
-            {text: "L'", isRight: true},
-            {text: 'Le', isRight: false},
-            {text: 'Les', isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ femme dort.',
-        translation: 'The woman is sleeping.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: "L'", isRight: false},
-            {text: 'Le', isRight: false},
-            {text: 'La', isRight: true}
-        ]
-    },
-    {
-        frenchGap: '_ chat est beau.',
-        translation: 'The cat is beautiful.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
-        answers: [
-            {text: "La", isRight: false},
-            {text: 'Le', isRight: true},
-            {text: "L'", isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ chats boivent.',
-        translation: 'The cats are drinking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
-        answers: [
-            {text: "Les", isRight: true},
-            {text: 'La', isRight: false},
-            {text: "Le", isRight: false}
-        ]
-    },
-    {
-        frenchGap: '_ voiture est là !',
-        translation: 'The car is here!',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
-        answers: [
-            {text: 'Les', isRight: false},
-            {text: 'La', isRight: true},
-            {text: 'Le', isRight: false}
-        ]
-    }
-]
 
 const cont = [
     {name: 'Introduction', id: '#Introduction'},

@@ -14,10 +14,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.3.3",
+    "gatsby": "^2.3.25",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-particles-js": "^2.5.1"
+    "react-particles-js": "^2.5.1",
+    "react-transition-group": "^4.0.0"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

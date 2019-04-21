@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Particles from "react-particles-js"
-import particlesConfig from "../configs/particles-config.js"
+import particlesConfig from "../data/particles-config.js"
 import "../styles/reset.css"
 import indexStyles from "../styles/index.module.css"
-import TopicNavList from "../components/topic-nav-list.js"
-import topicArr from "../configs/topic-arr.js"
+import TopicNavList from "../components/post/topic-nav-list.js"
+import topicArr from "../data/topic-arr.js"
 
 export default () => (
   <section id="" className={indexStyles.pageContainer}>
