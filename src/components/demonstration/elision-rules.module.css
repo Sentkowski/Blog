@@ -1,0 +1,46 @@
+.rules-list {
+    margin: 50px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rule {
+    margin: 15px auto;
+    padding: 5px 10px;
+    width: 130px;
+    min-height: 130px;
+    border: 2px solid #272635;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.arrow {
+    height: 20px;
+    margin: 5px 0;
+}
+
+.label, .translation {
+    color: #5A5778;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.before, .after {
+    color: #272635;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 1000px) {
+    .rule {
+        width: auto;
+        width: 150px;
+        margin: 15px 30px;
+    }
+}

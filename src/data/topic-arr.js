@@ -1,4 +1,5 @@
 export default [
-    {name: "La, le, les, l'", path: '/definite-articles'},
-    {name: "Un, une, des", path: '/indefinite-articles'}
+    {name: "Definite articles", path: '/definite-articles'},
+    {name: "Indefinite articles", path: '/indefinite-articles'},
+    {name: "Elision", path: '/elision'}
 ]
