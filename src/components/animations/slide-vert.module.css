@@ -2,7 +2,7 @@
   transform: translateY(-100px);
 }
 .comp-enter-active, .comp-appear-active {
-transform: translateY(0);
+  transform: translateY(0);
   transition: transform 300ms;
 }
 .comp-exit {

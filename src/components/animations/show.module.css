@@ -1,0 +1,17 @@
+.comp-enter {
+    opacity: 0;
+  }
+  .comp-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .comp-exit {
+    opacity: 1;
+  }
+  .comp-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  .comp-exit-done {
+      display: none;
+  }

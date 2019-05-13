@@ -9,62 +9,19 @@ import TestAbc from "../components/tests/test-abc.js"
 import Further from "../components/post/post-further-links.js"
 import ElisionRules from "../components/demonstration/elision-rules.js" 
 
+import rules from "../data/elision-rules.js"
+import exercise from "../data/elision-rules-ex"
+
 import styles from "../styles/elision.module.css"
 
 const cont = [
-    {name: 'Introduction', id: '#Introduction'}
+    {name: 'Introduction', id: '#Introduction'},
+    {name: 'Rules', id: '#Rules'},
+    {name: 'Examples', id: '#Examples'}
 ]
 
-const dummy = [
-    {
-        label: "Definite articles",
-        before: "le & la",
-        after: "l'",
-        translation: "the"
-    },
-    {
-        label: "Subject pronouns",
-        before: "je & ce",
-        after: "j' & c'",
-        translation: "I & it"
-    },
-    {
-        label: "Particle",
-        before: "ne",
-        after: "n'",
-        translation: "not"
-    },
-    {
-        label: "Preposition",
-        before: "de",
-        after: "d'",
-        translation: "of"
-    },
-    {
-        label: "It depends :(",
-        before: "que",
-        after: "qu'",
-        translation: "e.g. what, which"
-    },
-    {
-        label: "Conjunction",
-        before: "si",
-        after: "s'",
-        translation: "if"
-    },
-    {
-        label: "Object pronouns",
-        before: "me, te, se, le, la",
-        after: "m', t', s', l'",
-        translation: "me, you, ...self, her, him"
-    },
-    {
-        label: "Object pronouns",
-        before: "le, la, moi, toi",
-        after: "l', m', t'",
-        translation: "him, her, me, you"
-    }
-]
+const introText = ["The elision is the omission of a syllable which ends in a vowel before a word beginning with a vowel or a mute “h”. Thanks to it French sounds so smooth."]
+const rulesIntroText = ["Elision occurs in specific contexts. Don't try to learn them by heart – it's better to let the intuition handle it. With a bit of practise it will come naturally.", "Start by correcting the sentences below. In each of them there is a possibility to elide – your task is to find the corresponding rule to make it happen.", "Below you will find the examples you corrected. Let's build that section together!"]
 
 export default () => (
     <>
@@ -72,7 +29,9 @@ export default () => (
         <PostSubtitle subtitle="J'ai, l'arbre" />
         <ContentList content={cont} />
         <PostHeading identifier='Introduction' heading='What is elision?' />
-        <ElisionRules rules={dummy} />
-
+        <TextSegment textSegments={introText} />
+        <PostHeading identifier='Rules' heading='Rules' />
+        <TextSegment textSegments={rulesIntroText} />
+        <ElisionRules rules={rules} exercise={exercise} />
     </>
 )
