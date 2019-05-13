@@ -39,20 +39,23 @@ export default [
         before: "si",
         after: "s'",
         translation: "if",
-        ruleCode: "si"
+        ruleCode: "si",
+        note: "Only before il and ils."
     },
     {
         label: "Object pronouns",
         before: "me, te, se, le, la",
         after: "m', t', s', l'",
         translation: "me, you, ...self, her, him",
-        ruleCode: "obj-e"
+        ruleCode: "obj-e",
+        note: "Before the verb."
     },
     {
         label: "Object pronouns",
         before: "le, la, moi, toi",
         after: "l', m', t'",
         translation: "him, her, me, you",
-        ruleCode: "obj-oi"
+        ruleCode: "obj-oi",
+        note: "Between an imperative verb and the pronoun en or y."
     }
 ]

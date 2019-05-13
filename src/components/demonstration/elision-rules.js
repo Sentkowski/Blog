@@ -5,6 +5,7 @@ import appear from "../animations/slide-vert.module.css"
 import fade from "../animations/show.module.css"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import arrow from "../../../static/long-arrow-bottom.svg"
+import { start } from "repl";
 
 const transClassNames = {
     enter: appear.compEnter,
@@ -26,7 +27,8 @@ export default class ElisionRules extends React.Component {
         super(props);
         this.state = {
             currentExample: 0,
-            exVisible: false
+            exVisible: false,
+            starCount: 0
         }
         this.exRef = React.createRef();
     }
@@ -59,9 +61,20 @@ export default class ElisionRules extends React.Component {
             <li className={styles.exampleCorrect} key={i}>
                 <p className={styles.exampleRuleNote}>{ruleBefore} → {ruleAfter}</p>
                 <p>{this.props.exercise[i].correct}</p>
+                <p className={styles.exampleRuleNote}>{this.props.exercise[i].translation}</p>
             </li>)
         }
         return examples;
+    }
+
+    generateStar(rule) {
+        if ('note' in rule) {
+            this.setState(prevState => ({
+                starCount: prevState.starCount + 1
+            }));
+            let star = '*';
+            return <div>{star.repeat(this.state.starCount)}</div>
+        }
     }
 
     componentDidMount() {
@@ -92,6 +105,8 @@ export default class ElisionRules extends React.Component {
     }
 
     render() {
+        let starCount = 1;
+        const star = '*';
         return (
             <>
                 <ul className={styles.rulesList} ref={this.exRef}>
@@ -103,6 +118,7 @@ export default class ElisionRules extends React.Component {
                                 <img className={styles.ruleArrow} src={arrow} />
                                 <div className={styles.ruleAfter}>{rule.after}</div>
                                 <div className={styles.ruleTranslation}>({rule.translation})</div>
+                                {('note' in rule) && <div className={styles.ruleStars}>{star.repeat(starCount++)}</div>}
                                 {(this.state.currentExample > 0 && this.props.exercise[this.state.currentExample - 1].ruleCode === rule.ruleCode) && 
                                 <div className={styles.goodMessage}>
                                     <p className={styles.goodMessageText}>{this.generateMotivation()}</p>
@@ -131,6 +147,11 @@ export default class ElisionRules extends React.Component {
                         <div className={styles.exerciseTranslation}>{this.props.exercise[this.state.currentExample].translation}</div>
                     </div>
                 </CSSTransition>
+                <ul className={styles.starNotesList}>
+                    <li className={styles.starNote}>* Only before <i className={styles.frenchWord}>il</i> and <i className={styles.frenchWord}>ils.</i></li>
+                    <li className={styles.starNote}>** Before the verb.</li>
+                    <li className={styles.starNote}>*** Between an imperative verb and the pronoun <i className={styles.frenchWord}>en</i> or <i className={styles.frenchWord}>y</i>.</li>
+                </ul>
                 <PostHeading identifier='Examples' heading='Examples' />
                 <ul className={styles.examplesList}>
                     {this.generateExamplesList()}

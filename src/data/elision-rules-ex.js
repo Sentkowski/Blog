@@ -2,7 +2,7 @@ export default [
     {
         wrong: "Le arbre en haut de la colline.",
         correct: "L’arbre en haut de la colline.",
-        translation: "The tree on top of he hill.",
+        translation: "The tree on top of the hill.",
         ruleCode: "art"
     },
     {

@@ -20,8 +20,8 @@ const cont = [
     {name: 'Examples', id: '#Examples'}
 ]
 
-const introText = ["The elision is the omission of a syllable which ends in a vowel before a word beginning with a vowel or a mute “h”. Thanks to it French sounds so smooth."]
-const rulesIntroText = ["Elision occurs in specific contexts. Don't try to learn them by heart – it's better to let the intuition handle it. With a bit of practise it will come naturally.", "Start by correcting the sentences below. In each of them there is a possibility to elide – your task is to find the corresponding rule to make it happen.", "Below you will find the examples you corrected. Let's build that section together!"]
+const introText = ["The elision is the omission of a syllable which ends in a vowel before a word beginning with a vowel or a mute “h”. Thath's why French sounds so smooth."]
+const rulesIntroText = ["Elision occurs in specific contexts. Don't try to learn them by heart – it's better to let the intuition handle it. With a bit of practise it will come naturally.", "Start by correcting the sentences below. In each of them there is a possibility to elide – your task is to find the corresponding rule to make it happen.", "In the next section you will find the examples you corrected."]
 
 export default () => (
     <>
