@@ -7,7 +7,7 @@ export default [
     {
         frenchGap: '_ fille mange.',
         translation: 'A girl is eating.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Female symbol' src={fSymbol} />,
         answers: [
             {text: 'Un', isRight: false},
             {text: 'Une', isRight: true},
@@ -17,7 +17,7 @@ export default [
     {
         frenchGap: '_ chien aboie.',
         translation: 'A dog is barking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Male symbol.' src={mSymbol} />,
         answers: [
             {text: 'Un', isRight: true},
             {text: 'Une', isRight: false},
@@ -27,7 +27,7 @@ export default [
     {
         frenchGap: 'J’ai _ animaux',
         translation: 'I have animals.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Group symbol.' src={groupSymbol} />,
         answers: [
             {text: "un", isRight: false},
             {text: 'une', isRight: false},
@@ -37,7 +37,7 @@ export default [
     {
         frenchGap: '_ gens marchent',
         translation: 'People are walking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Group symbol.' src={groupSymbol} />,
         answers: [
             {text: 'Un', isRight: false},
             {text: 'Une', isRight: false},
@@ -47,7 +47,7 @@ export default [
     {
         frenchGap: 'Je vois _ maison',
         translation: 'I see a house.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Female symbol.' src={fSymbol} />,
         answers: [
             {text: "un", isRight: false},
             {text: 'une', isRight: true},
@@ -57,7 +57,7 @@ export default [
     {
         frenchGap: 'Tu as _ chat',
         translation: 'You have a cat.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt='Male smybol.' src={mSymbol} />,
         answers: [
             {text: "un", isRight: true},
             {text: 'une', isRight: false},

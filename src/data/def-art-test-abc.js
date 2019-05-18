@@ -7,7 +7,7 @@ export default [
     {
         frenchGap: 'Où est _ voiture ?',
         translation: 'Where is the car?',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt="Female symbol." src={fSymbol} />,
         answers: [
             {text: 'les', isRight: false},
             {text: 'la', isRight: true},
@@ -17,7 +17,7 @@ export default [
     {
         frenchGap: '_ animal mange.',
         translation: 'The animal is eating.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt="Mle symbol." src={mSymbol} />,
         answers: [
             {text: "L'", isRight: true},
             {text: 'Le', isRight: false},
@@ -27,7 +27,7 @@ export default [
     {
         frenchGap: '_ femme dort.',
         translation: 'The woman is sleeping.',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt="Female symbol." src={fSymbol} />,
         answers: [
             {text: "L'", isRight: false},
             {text: 'Le', isRight: false},
@@ -37,7 +37,7 @@ export default [
     {
         frenchGap: '_ chat est beau.',
         translation: 'The cat is beautiful.',
-        icon: <img style={{width: '32px', height:'32px'}} src={mSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt="Male symbol." src={mSymbol} />,
         answers: [
             {text: "La", isRight: false},
             {text: 'Le', isRight: true},
@@ -47,7 +47,7 @@ export default [
     {
         frenchGap: '_ chats boivent.',
         translation: 'The cats are drinking.',
-        icon: <img style={{width: '32px', height:'32px'}} src={groupSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt ='Group symbol.' src={groupSymbol} />,
         answers: [
             {text: "Les", isRight: true},
             {text: 'La', isRight: false},
@@ -57,7 +57,7 @@ export default [
     {
         frenchGap: '_ voiture est là !',
         translation: 'The car is here!',
-        icon: <img style={{width: '32px', height:'32px'}} src={fSymbol} />,
+        icon: <img style={{width: '32px', height:'32px'}} alt="Female symbol." src={fSymbol} />,
         answers: [
             {text: 'Les', isRight: false},
             {text: 'La', isRight: true},

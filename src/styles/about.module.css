@@ -3,5 +3,19 @@
 }
 
 .rule-list > li {
-    margin: 30px 0 50px;
+    margin: 30px 0 30px;
+}
+
+
+.rule-heading {
+    padding: 0 30px;
+    text-align: left;
+    font-size: 28px;
+    color: #272635;
+}
+
+.rule-text {
+    color: #272635;
+    font-size: 20px;
+    padding: 10px 30px 20px;
 }

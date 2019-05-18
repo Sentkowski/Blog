@@ -32,7 +32,8 @@ const par = [
 ]
 
 const further = [
-    {name: "Un, une, des", path: '/indefinite-articles', description: "Definite articles have indefinite counterparts. Curious to see them?"}
+    {name: "Un, une, des", path: '/indefinite-articles', description: "Definite articles have indefinite counterparts. Curious to see them?"},
+    {name: "Elision", path: '/elision', description: "L' is an effect of elision. Learn more about that here."}
 ]
 
 export default () => (

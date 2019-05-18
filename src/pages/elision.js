@@ -4,20 +4,20 @@ import PostSubtitle from "../components/post/post-subtitle.js"
 import ContentList from "../components/post/content-list.js"
 import PostHeading from "../components/post/post-heading.js"
 import TextSegment from "../components/post/text-segment.js"
-import InteractiveTabs from "../components/demonstration/interactive-tabs.js"
-import TestAbc from "../components/tests/test-abc.js"
 import Further from "../components/post/post-further-links.js"
 import ElisionRules from "../components/demonstration/elision-rules.js" 
 
 import rules from "../data/elision-rules.js"
 import exercise from "../data/elision-rules-ex"
 
-import styles from "../styles/elision.module.css"
-
 const cont = [
     {name: 'Introduction', id: '#Introduction'},
     {name: 'Rules', id: '#Rules'},
     {name: 'Examples', id: '#Examples'}
+]
+
+const further = [
+    {name: "La, le, les, l'", path: '/definite-articles', description: "Not sure what definite articles are? Find out here!"}
 ]
 
 const introText = ["The elision is the omission of a syllable which ends in a vowel before a word beginning with a vowel or a mute “h”. Thath's why French sounds so smooth."]
@@ -33,5 +33,6 @@ export default () => (
         <PostHeading identifier='Rules' heading='Rules' />
         <TextSegment textSegments={rulesIntroText} />
         <ElisionRules rules={rules} exercise={exercise} />
+        <Further list={further} />
     </>
 )

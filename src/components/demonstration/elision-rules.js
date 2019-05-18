@@ -5,7 +5,6 @@ import appear from "../animations/slide-vert.module.css"
 import fade from "../animations/show.module.css"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import arrow from "../../../static/long-arrow-bottom.svg"
-import { start } from "repl";
 
 const transClassNames = {
     enter: appear.compEnter,
@@ -115,7 +114,7 @@ export default class ElisionRules extends React.Component {
                             <button onClick={(evt) => this.validatePick(rule.ruleCode, evt)} className={styles.rule}>
                                 <div className={styles.ruleLabel}>{rule.label}</div>
                                 <div className={styles.ruleBefore}>{rule.before}</div>
-                                <img className={styles.ruleArrow} src={arrow} />
+                                <img className={styles.ruleArrow} alt='Arrow symbol.' src={arrow} />
                                 <div className={styles.ruleAfter}>{rule.after}</div>
                                 <div className={styles.ruleTranslation}>({rule.translation})</div>
                                 {('note' in rule) && <div className={styles.ruleStars}>{star.repeat(starCount++)}</div>}

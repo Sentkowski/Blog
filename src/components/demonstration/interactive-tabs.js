@@ -48,11 +48,11 @@ export default class InteractiveTabs extends React.Component {
                 <p className={styles.frenchText}>{this.props.examples[this.cycleThroughExamples()][this.state.currentTab].french}</p>
                 <div className={styles.translationContainer}>
                     <button onClick={(e) => this.arrowClick(-1, e)} className={styles.previousButton}>
-                        <img src={arrow} />
+                        <img alt="Arrow pointing backwards." src={arrow} />
                     </button>
                     <p className={styles.translation}>{this.props.examples[this.cycleThroughExamples()][this.state.currentTab].translation}</p>
                     <button onClick={(e) => this.arrowClick(1, e)}  className={styles.nextButton}>
-                        <img src={arrow} />
+                        <img alt="Arrow pointing forward." src={arrow} />
                     </button>
                 </div>
                 <div className={styles.hints}>
